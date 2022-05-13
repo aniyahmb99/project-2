@@ -1,6 +1,6 @@
 # Project 2
 
-## Purpse
+## Purpose
 This website was developed to...
 
 ## Built With
