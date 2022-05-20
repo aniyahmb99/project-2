@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-client_id" content="52476264067-q0kv5rs9df1bf0bpjb5s0fj6ln1gcoid.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +14,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Seasons Greetings - Home</title>
   </head>
   <body>
     <i class="fa-light fa-ellipsis-stroke"></i>
@@ -22,6 +24,9 @@
       <p class="already">
         Already Registered? <span><a class="login-link" href>Login</a></span>
       </p>
+    </div>
+    <div class="g-signin2" data-onsuccess="onSignIn">
+      <button type="button" class="btn btn-dark">Google Sign In</button>
     </div>
     <div class="signup">
       <p>NAME</p>
