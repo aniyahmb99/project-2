@@ -2,9 +2,10 @@
 // Selected holiday will generate the select holiday card HTML 
 // When the user selects the card it will then move tp the preview 
 
-
+const generateCard = require("./generateHoliday");
 const inquirer = require("inquirer");
-const card = require("../overlay")
+const fs = require("fs");
+
 
 function initApp() {
 
@@ -33,9 +34,10 @@ function initApp() {
                     "Saint Patrick's Day"
                ] 
             }
+            
         ]).then(choice => {
             switch(choice.holiday) {
-                case "Martin Luther King, Jr. Day": generateMlk();
+                case "Martin Luther King, Jr. Day": ;
                 break;
                 case "Memorial Day": generateMemDay();
                 break;
@@ -43,7 +45,7 @@ function initApp() {
                 break;
                 case "Independence Day": generateIndDay();
                 break;
-                case "Labor Day<": generateLaborDay();
+                case "Labor Day": generateLaborDay();
                 break;
                 case "Veterans Day": generateVetDay();
                 break;
@@ -63,9 +65,15 @@ function initApp() {
                 break;
                 case "Saint Patrick's Day": generateStPat();
                 break;
+                default: generateHolidayCard();
             }
         });
+
+        function generateMlk() {
+            fs.writeFileSync("./thumbnail.html", generateCard(), "utf-8");
+        };
     }
+    
     selectHoliday();
 
 }
