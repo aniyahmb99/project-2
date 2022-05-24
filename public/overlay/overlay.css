@@ -1,0 +1,15 @@
+.input-overlay {
+ 
+   
+}
+
+.addBtn {
+  background-color: crimson;
+    
+}
+
+.overlay {
+    position: absolute;
+    left: 15px;
+    top: 50px;
+}

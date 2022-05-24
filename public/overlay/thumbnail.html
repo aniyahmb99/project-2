@@ -1,0 +1,821 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="thumbnail.css" />
+        <title>Document</title>
+      </head>
+    
+      <body>
+    
+        <header>
+          <div class="bg-dark collapse show" id="navbarHeader">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h1 class="text-white">Select Your Card</h1>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4 ">
+                  <div>
+                    <h3 class="text-white">Filter</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+    
+        <main>
+    
+          <section class="py-5 text-center container text-card">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <p class="text instruction">Select the card that you would like to send below!</p>
+              </div>
+            </div>
+          </section>
+    <!-- MLK Day Options -->
+          <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+          <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+    
+                  <img src="../public/img/cards/MLK 1.PNG" class="img-thumbnail" alt="...">
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+    
+                <img src="../public/img/cards/MLK 2.PNG" class="img-thumbnail" alt="...">
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-md btn-outline-secondary" onclick="selectCard()">Select</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+    
+                <img src="../public/img/cards/MLK 3.PNG" class="img-thumbnail" alt="..."> 
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+<!-- Memorial Day Options -->
+      <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+        <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+  
+                <img src="../public/img/cards/Memeriol Day.png" class="img-thumbnail" alt="...">
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+  
+              <img src="../public/img/cards/Memorial Day 2.PNG" class="img-thumbnail" alt="...">
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Junteenth Options -->
+
+    <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+      <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+              <img src="../public/img/cards/Juneteenth 1.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>             
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="../public/img/cards/Juneteenth 2.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Independence Day Options -->
+
+        <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+          <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+
+                  <img src="../public/img/cards/Independence Day.PNG" class="img-thumbnail" alt="...">
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <img src="../public/img/cards/Independence Day 2.PNG" class="img-thumbnail" alt="...">
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+
+                <img src="../public/img/cards/Independence Day 3.PNG" class="img-thumbnail" alt="..."> 
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </section>
+
+<!-- Labor Day Options -->
+
+      <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+        <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+
+                <img src="../public/img/cards/Labor Day.PNG" class="img-thumbnail" alt="...">
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <img src="../public/img/cards/Labor Day 2.PNG" class="img-thumbnail" alt="...">
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <img src="../public/img/cards/Labor Day 3.PNG" class="img-thumbnail" alt="..."> 
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </section>
+
+<!-- Veterans Day Options -->
+
+    <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+      <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+              <img src="../public/img/cards/Veterans Day.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>             
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="../public/img/cards/Veterans Day 2.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Xmas Options -->
+
+    <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+      <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+              <img src="../public/img/cards/Xmas.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>             
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="../public/img/cards/Xmas 2.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="../public/img/cards/Xmas 3.PNG" class="img-thumbnail" alt="..."> 
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+          <!-- NYE Options -->
+          <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+            <div class="container flex-wrap">
+            <div class="row" style="height: 500px; width: 500px">
+              <div class="col">
+                <div class="card shadow-sm">
+      
+                    <img src="../public/img/cards/NewYear.PNG" class="img-thumbnail" alt="...">
+                  
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="btn">
+                        <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                      </div>
+                    </div>
+                  </div>             
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container flex-wrap">
+            <div class="row" style="height: 500px; width: 500px">
+              <div class="col">
+                <div class="card shadow-sm">
+      
+                  <img src="../public/img/cards/NewYear 2.PNG" class="img-thumbnail" alt="...">
+                  
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="btn">
+                        <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mothers Day options -->
+        <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+          <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+    
+                  <img src="../public/img/cards/Mothers day 1.png" class="img-thumbnail" alt="...">
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+    
+                <img src="../public/img/cards/Mothers Day 2.PNG" class="img-thumbnail" alt="...">
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container flex-wrap">
+          <div class="row" style="height: 500px; width: 500px">
+            <div class="col">
+              <div class="card shadow-sm">
+    
+                <img src="../public/img/cards/Mothers Day 3.PNG" class="img-thumbnail" alt="..."> 
+                
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="btn">
+                      <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- easter options -->
+
+      <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+        <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+  
+                <img src="../public/img/cards/easter.PNG" class="img-thumbnail" alt="...">
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+  
+              <img src="../public/img/cards/easter 2.PNG" class="img-thumbnail" alt="...">
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex-wrap">
+        <div class="row" style="height: 500px; width: 500px">
+          <div class="col">
+            <div class="card shadow-sm">
+  
+              <img src="../public/img/cards/easter 3.PNG" class="img-thumbnail" alt="..."> 
+              
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="btn">
+                    <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- halloween options -->
+    <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+      <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+              <img src="../public/img/cards/halloween.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>             
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="../public/img/cards/halloween 2.PNG" class="img-thumbnail" alt="...">
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex-wrap">
+      <div class="row" style="height: 500px; width: 500px">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img src="../public/img/cards/halloween 3.PNG" class="img-thumbnail" alt="..."> 
+            
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="btn">
+                  <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- fathers day -->
+
+  <section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+    <div class="container flex-wrap">
+    <div class="row" style="height: 500px; width: 500px">
+      <div class="col">
+        <div class="card shadow-sm">
+
+            <img src="../public/img/cards/Fathers Day.png" class="img-thumbnail" alt="...">
+          
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="btn">
+                <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+              </div>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex-wrap">
+    <div class="row" style="height: 500px; width: 500px">
+      <div class="col">
+        <div class="card shadow-sm">
+
+          <img src="../public/img/cards/Fathers Day 2.PNG" class="img-thumbnail" alt="...">
+          
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="btn">
+                <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex-wrap">
+    <div class="row" style="height: 500px; width: 500px">
+      <div class="col">
+        <div class="card shadow-sm">
+
+          <img src="../public/img/cards/Fathers Day 3.PNG" class="img-thumbnail" alt="..."> 
+          
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="btn">
+                <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Valentines Day Options  -->
+<section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+  <div class="container flex-wrap">
+  <div class="row" style="height: 500px; width: 500px">
+    <div class="col">
+      <div class="card shadow-sm">
+
+          <img src="../public/img/cards/valentinesDay.PNG" class="img-thumbnail" alt="...">
+        
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="btn">
+              <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+            </div>
+          </div>
+        </div>             
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container flex-wrap">
+  <div class="row" style="height: 500px; width: 500px">
+    <div class="col">
+      <div class="card shadow-sm">
+
+        <img src="../public/img/cards/valentinesDay2.PNG" class="img-thumbnail" alt="...">
+        
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="btn">
+              <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- St. Pats Options -->
+
+<section id="thumbNail" class="album py-5 d-inline-flex hide">
+
+  <div class="container flex-wrap">
+  <div class="row" style="height: 500px; width: 500px">
+    <div class="col">
+      <div class="card shadow-sm">
+
+          <img src="../public/img/cards/stPattyDay.PNG" class="img-thumbnail" alt="...">
+        
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="btn">
+              <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+            </div>
+          </div>
+        </div>             
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container flex-wrap">
+  <div class="row" style="height: 500px; width: 500px">
+    <div class="col">
+      <div class="card shadow-sm">
+
+        <img src="../public/img/cards/stPattyDay2.PNG" class="img-thumbnail" alt="...">
+        
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="btn">
+              <button type="button" class="btn btn-md btn-outline-secondary">Select</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container flex-wrap">
+  <div class="row" style="height: 500px; width: 500px">
+    <div class="col">
+      <div class="card shadow-sm">
+
+        <img src="../public/img/cards/stPattyDay3.PNG" class="img-thumbnail" alt="..."> 
+        
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="btn">
+              <button id="selectBtn" type="button" class="btn btn-md btn-outline-secondary">Select</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+    </main>
+  </body>
+      <script src="overlay.js"></script>
+</html>
+    
+    
+    
