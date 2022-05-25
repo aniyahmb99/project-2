@@ -1,3 +1,6 @@
+const dropdown = document.querySelector("dropdown");
+const menu = document.querySelector("dropdown-menu");
+
 $(".dropdown").click(function () {
   $(this).attr("tabindex", 1).focus();
   $(this).toggleClass("active");
